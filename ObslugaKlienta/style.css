@@ -1,0 +1,417 @@
+﻿@charset "UTF-8";
+table {
+    width: 1100px;
+    padding: 10px;
+    border-color: #000000;
+    text-align: center;
+    border: 0;
+    border-spacing: 0;
+    table-layout: fixed;
+    color: #5C1818;
+}
+.sukces{
+	background-color: #80ff80;
+	border: 1px solid #008000;
+	border-radius: 3px;
+	padding: 5px;
+}
+
+.blad{
+	color: #800000;
+	background-color: #ffcccc;
+	border: 1px solid #ff0000;
+	border-radius: 3px;
+	padding: 5px;
+}
+
+tbody tr:nth-child(odd){
+    background-color: #FFE9B9;
+}
+
+tbody tr:nth-child(even){
+    background-color: #FFD680;
+}
+figure{
+    background-color: antiquewhite;
+    width: 700px
+}
+figcaption{
+    padding: 10px;
+    color:#5C1818;
+    font-weight: bolder;
+}
+figcaption:First-Letter{
+    font-size: 2em;    
+}
+
+
+td {
+    border-bottom:solid 1px;
+    border-bottom-color: #D6AB8F;
+    padding: 5px;
+}
+
+
+
+thead {
+    background-color: #B8846E;
+    font-weight: bolder;
+}
+thead td:hover{
+    color:white;
+    text-decoration: underline;
+}
+
+tfoot {
+    font-weight: bolder;
+    background-color: #D6AB8F;
+    text-align:left;
+}
+
+.srednia{
+    background-color:#B8846E;
+    text-align: center;
+}
+
+.parzyste{
+    background-color: #FFE9B9;
+}
+
+.nieparzyste{
+    background-color: #FFE9B9;
+}
+
+
+form{
+    width: 500px;
+    background-color: antiquewhite;
+    color: #5C1818;
+    border: 1px solid;
+}
+select{
+color: inherit;
+    max-width: 200px;
+    float: right;
+}
+fieldset{
+    max-width: 400px;
+    border: dotted 1px;
+    color: inherit;
+    background-color: #ccebc5;
+    margin: auto;
+    background-color: inherit;
+    
+}
+label{
+    display: block;
+    width: 150px;
+
+    
+}
+input[type=text], input[type=password]{
+    color: inherit;
+    max-width: 200px;
+    float: right;
+    
+}
+input[type=text]:focus, input[type=password]:focus{
+    background-color:#FFE9B9;
+}
+input[type=submit]:hover, input[type=reset]:hover{
+    color:blue;
+}
+h1:First-letter{
+    font-size:2em; 
+}
+.prawo{
+    float: right;
+}
+.lewo{
+    float: left;
+}
+p{
+    clear:both;
+}
+textarea{
+        width: 400px;
+}
+
+ /* ------------------------CZĘŚĆ-GÓRNA-MENU------------------------ */
+
+		  /* usunięcie domyślnych właściwości CSS z elementów - ol - oraz - ul */
+		  .menu, .menu ul, .menu ol {
+			list-style-type:none;
+			padding:0;
+			margin:0;
+		  }
+
+		  /* wygląd głównego elementu - ol */
+		  .menu {
+			background-color:#FFF;
+			font-size:18px;
+			height:2em;
+			line-height:2em;
+			text-align:center;
+		  }
+
+		  /* wygląd wszystkich elementów - a - znajdujących się w elemencie - ol */
+		  .menu a {
+			display:block;
+			text-decoration:none;
+			color:#000;
+			padding:0 5px;
+		  }
+
+		  /* wygląd elementów - li - wszystkich dzieci elementu - ol */
+		  .menu > li {
+			float:left;
+			width:150px;
+			margin-left:1px;
+			background-color:#FDD700;
+			height:2em;
+		  }
+
+		  /* wygląd elementu - li - pierwszego dziecka elementu - ol */
+		  .menu > li:first-child {
+			margin-left:0;
+		  }
+
+		  /* wygląd elementów - li - wszystkich dzieci elementu - ol - po najechaniu kursorem myszki na element - li */
+		  .menu > li:hover {
+			background-color:#EEE;
+		  }
+
+		  /* wygląd elementu - a - dziecka elementu - li - będącego dzieckiem elementu - ol - po najechaniu kursorem myszki na element - li */
+		  .menu > li:hover > a {
+			color:#09C;
+		  }
+
+		  /* wygląd elementu - ul - dziecka elementu - li - będącego dzieckiem elementu - ol - po najechaniu kursorem myszki na element - li */
+		  .menu > li:hover > ul {
+			display:block;
+		  }
+
+		  /* ------------------------CZĘŚĆ-ROZWIJANA-MENU-POZIOM-1----------------------- */
+
+		  /* wygląd głównych rozwijanych elementów - ul */
+		  .menu > li > ul {
+			display:none;
+		  }
+
+		  /* wygląd elementu - li - w części rozwijanej */
+		  .menu > li > ul > li {
+			position:relative;
+			background-color:#EEE;
+		  }
+
+		  /* wygląd elementu - a - w części rozwijanej */
+		  .menu > li > ul > li > a {
+			border-top:1px solid #FFF;
+		  }
+
+		  /* wygląd elementu - li - w części rozwijanej, po najechaniu kursorem myszki na dany element - li */
+		  .menu > li > ul > li:hover {
+			background-color:#DDD;
+		  }
+
+		  /* wygląd elementu - a - w części rozwijanej, po najechaniu kursorem myszki na element - li */
+		  .menu > li > ul > li:hover > a {
+			color:#09C;
+		  }
+
+		  /* ------------------------CZĘŚĆ-ROZWIJANA-MENU-POZIOM-2----------------------- */
+
+		  /* wygląd głównego elementu - ol - w drugiej części rozwijanej */
+		  .menu > li > ul > li > ol {
+			display:none;
+			width:150%;
+			position:absolute;
+			left:100%;
+			margin-top:-2em;
+		  }
+
+		  /* wygląd głównego elementu - ol - w drugiej części rozwijanej, po najechaniu kursorem myszki na jego rodzica - li */
+		  .menu > li > ul > li:hover > ol {
+			display:block;
+		  }
+
+		  /* wygląd elementów - li - w drugiej części rozwijanej */
+		  .menu > li > ul > li > ol > li {
+			background-color:#CCC;
+		  }
+
+		  /* wygląd elementów - a - w drugiej części rozwijanej */
+		  .menu > li > ul > li > ol > li > a {
+			border-top:1px solid #FFF;
+			border-left:1px solid #FFF;
+		  }
+
+		  /* wygląd elementu - a - w drugiej części rozwijanej, po najechaniu kursorem myszki */
+		  .menu > li > ul > li > ol > li > a:hover {
+			color:#09C;
+		  }
+
+		  /* ------------------------WSPÓLNE----------------------- */
+
+		  /* zaokrąglone rogi wszystkich elementów - li - oraz - a */
+		  .menu li, ol a {
+			border-radius:6px;
+		  }
+
+		  /* strzałka w prawo */
+		  .menu .dol {
+			background-image:url('http://webkod.pl/images/down.png');
+			background-repeat:no-repeat;
+			background-position:98% center;
+		  }
+
+		  /* strzałka w dół */
+		  .menu .prawo {
+			background-image:url('http://webkod.pl/images/right.png');
+			background-repeat:no-repeat;
+			background-position:98% center;
+		  }
+
+		  /*------------------------UKLAD-STRONY------------------------*/
+		#blokMenu{
+			margin:2%;
+			margin-right:6%;
+			float:right;
+		}
+		#blokLogowania{
+			float:right;
+			margin-top:4%;
+			margin-right:24%;
+			color:black;
+			border:2px solid #ccc;
+			border-radius:10px;
+			padding:1%;
+		}
+		#blokRejestracji{
+			
+			margin-top:8%;
+			margin-right:35%;
+			margin-left:35%;
+			color:black;
+			border:6px solid #ccc;
+			border-radius:5px;
+			padding:1%;
+			float:center;
+		}
+		#blokPanelu{
+			float:right;
+			margin-top:4%;
+		}
+		#blokLogo{
+			float:left;
+			margin:5%;
+		}
+		#blokGlowny{
+			margin-left:4%;
+			margin-right:4%;
+			margin-top:16%;
+			margin-bottom:4%;
+		}
+		#blok1{
+			float:left;
+			margin-right:20%;
+			padding:1%;
+			
+		}
+		#blok2{
+			float:right;
+			margin-left:20%;
+			padding:1%;
+		}
+		#blok3{
+			float:left;
+			margin-right:20%;
+			padding:1%;	
+		}
+		#stopka{
+			margin-right:40%;
+			margin-left:40%;
+			padding:1%;
+		}
+ /* ------------------------ANIMOWANE-TLO----------------------- */
+		  #element_z_tlem {
+			border:3px solid #EEE;
+			animation:ruch 300s linear infinite alternate;
+			-webkit-animation:ruch 300s linear infinite alternate; /* dla Google Chrome, Safari, Opera 15+ */
+			background-image:url('http://webkod.pl/images/para1.png'),
+							 url('http://webkod.pl/images/para2.png'),
+							 url('http://webkod.pl/images/para3.png');
+		  }
+
+		  #akapit {
+			width:300px;
+			margin:84px auto;
+			padding:10px;
+			border:3px solid #EEE;
+			background-color:rgba(255,255,255,0.7);
+			font-size:24px;
+		  }
+
+		  /*------------------------ANIMACJA-RUCHOME-TŁO------------------------*/
+		  @keyframes ruch
+		  {
+			0% {background-position:0 0, 0 0, 0 0;}
+			100% {background-position:10000px 0, 7500px 0, 5000px 0;}
+		  }
+
+		  /* dla Google Chrome, Safari, Opera 15+ */
+		  @-webkit-keyframes ruch
+		  {
+			0% {background-position:0 0, 0 0, 0 0;}
+			100% {background-position:10000px 0, 7500px 0, 5000px 0;}
+		  }
+
+#blokLogowania1 form{
+			float:right;
+			margin-top:20%;
+		}
+
+		#blokLogowania1 label{
+			text-transform: uppercase;
+			font-size:12px;
+		}
+		#blokLogowania1 h1{
+			text-align:center;
+			text-transform: uppercase;
+			font-size:16px;
+		}
+		#blokLogowania1 p{
+			padding:1%;
+		}
+		#blokLogowania1 input{
+			float:right;
+		}
+
+
+
+@media all and (max-width:500px){
+    form{
+        width:300px;
+    }
+    fieldset{
+        padding: 10px;
+        width: 250px;
+    }
+    label{
+        display: block;
+    }
+    input[type=text], input[type=password]{
+        float: left;
+    }
+    textarea{
+        width: 150px;
+    }
+    .prawy{
+        display: block;
+        float: none;
+    }
+    .lewy{
+        float: none;
+    }
+}
+

@@ -1,0 +1,173 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+	color: white;
+}
+h2{
+    margin: 0px;
+	text-align: center;
+	color: black;
+	font-size:40px;
+}
+p{
+    margin: 5px;
+}
+
+
+#nawigacja{
+    min-width: 700px;
+    max-width: 10000px;
+    min-height: 45px;
+    padding: 5px;
+	float:right;
+	margin-top:3%;
+	background: red;
+    
+}
+#nawigacjaAdmin{
+    min-width: 700px;
+    max-width: 10000px;
+    min-height: 45px;
+    padding: 5px;
+	float:right;
+	margin-top:-200px;
+	background: blue;
+    
+}
+#logowanie{
+	position:absolute;
+    right:100px;
+	margin-top:-220px;
+	padding: 5px;
+	min-height:200px;
+	min-width:300px;
+}
+form{
+	color:black;
+}
+input[type=password], [type=submit]{
+
+    float: right;
+    
+}
+label{
+
+
+}
+
+
+li.poziom_1{
+    float: left;
+    width: 130px;
+    text-align: center;
+}
+li.poziom_1_menu{
+	float: left;
+    width: 130px;
+    text-align: center;
+}
+
+li.poziom_1_menu{
+    position: relative;
+}
+
+ul.menu, ul.menu ul{
+    list-style: none;
+    margin: auto;
+}
+ul.menu ul{
+    position: absolute;
+    visibility: hidden;
+    z-index: 999;
+}
+ul.menu li{
+    height: 45px;
+    text-align: center;
+	color: red;
+}
+ul.menu ul li{
+    text-align: center;
+	width: 130px;
+	float:left;
+}
+ul.menu a{
+    text-decoration: none;
+    display: block;
+    color: white;
+}
+ul.menu li:hover{
+	background: red;
+}
+ul.menu li:hover >ul{
+    visibility: visible;
+
+}
+#srodek{
+    position:absolute;
+    margin: auto;
+	margin-top:0.5%;
+    min-width: 700px;
+    max-width: 1360px;
+    min-height: 700px;
+	background: white;
+}
+
+#glowny{
+	position:absolute;
+	left:25%;
+    min-height: 400px;
+	min-width: 1000px;
+	background: red;
+	color:black;
+	text-align: center;
+
+}
+#glowny2{
+	margin-top:57%;
+	position:absolute;
+	left:25%;
+    min-height: 400px;
+	min-width: 1000px;
+	background: green;
+	color:black;
+	text-align: center;
+
+}
+
+#prawaKolumna{
+    position: absolute;
+    width: 200px;
+    height: 400px;
+    background: blue;
+    top: 5px;
+    bottom: 5px;
+    right: 5px;
+	text-align: center;
+	border: 1px solid blue;
+}
+
+
+#lewaKolumna{
+    position: absolute;
+    background: blue;
+    width: 150px;
+    height: 400px;
+    top: 5px;
+    bottom: 5px;
+    left: 5px;
+	text-align: center;
+	border: 1px solid blue;
+    
+}
+
+
+
+
+
+
+
+
+
+
+

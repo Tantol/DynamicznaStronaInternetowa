@@ -1,0 +1,161 @@
+@charset "UTF-8";
+table {
+    width: 1100px;
+    padding: 10px;
+    border-color: #000000;
+    text-align: center;
+    border: 0;
+    border-spacing: 0;
+    table-layout: fixed;
+    color: #5C1818;
+}
+.sukces{
+	background-color: #80ff80;
+	border: 1px solid #008000;
+	border-radius: 3px;
+	padding: 5px;
+}
+
+.blad{
+	color: #800000;
+	background-color: #ffcccc;
+	border: 1px solid #ff0000;
+	border-radius: 3px;
+	padding: 5px;
+}
+
+tbody tr:nth-child(odd){
+    background-color: #FFE9B9;
+}
+
+tbody tr:nth-child(even){
+    background-color: #FFD680;
+}
+figure{
+    background-color: antiquewhite;
+    width: 700px
+}
+figcaption{
+    padding: 10px;
+    color:#5C1818;
+    font-weight: bolder;
+}
+figcaption:First-Letter{
+    font-size: 2em;    
+}
+
+
+td {
+    border-bottom:solid 1px;
+    border-bottom-color: #D6AB8F;
+    padding: 5px;
+}
+
+
+
+thead {
+    background-color: #B8846E;
+    font-weight: bolder;
+}
+thead td:hover{
+    color:white;
+    text-decoration: underline;
+}
+
+tfoot {
+    font-weight: bolder;
+    background-color: #D6AB8F;
+    text-align:left;
+}
+
+.srednia{
+    background-color:#B8846E;
+    text-align: center;
+}
+
+.parzyste{
+    background-color: #FFE9B9;
+}
+
+.nieparzyste{
+    background-color: #FFE9B9;
+}
+
+
+form{
+    width: 500px;
+    background-color: antiquewhite;
+    color: #5C1818;
+    border: 1px solid;
+}
+fieldset{
+    max-width: 400px;
+    border: dotted 1px;
+    color: inherit;
+    background-color: #ccebc5;
+    margin: auto;
+    background-color: inherit;
+    
+}
+label{
+    display: block;
+    width: 150px;
+
+    
+}
+input[type=text], input[type=password]{
+    color: inherit;
+    max-width: 200px;
+    float: right;
+    
+}
+input[type=text]:focus, input[type=password]:focus{
+    background-color:#FFE9B9;
+}
+input[type=submit]:hover, input[type=reset]:hover{
+    color:blue;
+}
+h1:First-letter{
+    font-size:2em; 
+}
+.prawo{
+    float: right;
+}
+.lewo{
+    float: left;
+}
+p{
+    clear:both;
+}
+textarea{
+        width: 400px;
+}
+
+
+
+@media all and (max-width:500px){
+    form{
+        width:300px;
+    }
+    fieldset{
+        padding: 10px;
+        width: 250px;
+    }
+    label{
+        display: block;
+    }
+    input[type=text], input[type=password]{
+        float: left;
+    }
+    textarea{
+        width: 150px;
+    }
+    .prawy{
+        display: block;
+        float: none;
+    }
+    .lewy{
+        float: none;
+    }
+}
+
